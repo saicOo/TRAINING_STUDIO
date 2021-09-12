@@ -11,9 +11,13 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
     background: #F2F2F2;
+    
 }
 p{
     font-size: 14px;
@@ -43,8 +47,22 @@ ul , li{
     margin: 20px auto;
 }
 /* header */
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.671);
+    transition: all 1s;
+}
+.fixed-header{
+    background-color: #fff;
+    position: fixed;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.205);
+}
 header .navbar .navbar-brand{
-color: black;
+color: #fff;
 text-transform: uppercase;
 font-size: 30px;
 font-weight: 800;
@@ -60,7 +78,7 @@ header .navbar .nav-item{
     padding-right: 20px;
 }
 header .navbar .nav-item .nav-link{
-    color: black;
+    color: #fff;
 }
 header .navbar .nav-item .btn{
     color: #fff;
@@ -70,7 +88,7 @@ header .navbar .nav-item .btn{
 /* home-banner */
 .banner{
     position: relative;
-    height: calc(100vh - 71px);
+    height: 100vh;
 }
 .banner video{
     width: 100%;
@@ -254,6 +272,101 @@ color: #fff;
     letter-spacing: .25px;
 }
 .classes-schedule .schedule-table table .ts-item{
-    opacity: 0;
+    
     transition: .5s ease-in-out;
 }
+.classes-schedule .schedule-table table .ts-item.Monday{
+    opacity: 1;
+}
+/* start expert tarainers */
+.expert-tarainers {
+    padding-bottom: 100px;
+}
+.expert-tarainers .trainer-item{
+color: black;
+background-color: #fff;
+margin-bottom: 20px;
+padding: 40px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.205);
+}
+.expert-tarainers .trainer-item img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.expert-tarainers .trainer-item .down-content span{
+    font-size: 13px;
+    color: var(--min-color);
+    font-weight: normal;
+}
+.expert-tarainers .trainer-item .down-content h4{
+    font-size: 22px;
+    margin: 5px 0 15px;
+}
+.expert-tarainers .trainer-item .down-content .social{
+    display: flex;
+    margin-top: 20px;
+    
+}
+.expert-tarainers .trainer-item .down-content .social i{
+    color: #333;
+    margin-right: 18px;
+    cursor: pointer;
+    transition: color .3s;
+}
+.expert-tarainers .trainer-item .down-content .social i:hover{
+    color: var(--min-color);
+}
+/* end expert tarainers */
+/* start contact us */
+.contact-form {
+    padding: 80px;
+    background-image: url(../images/contact-bg.jpg);
+    background-size: cover;
+    min-height: 100%;
+}
+@media (max-width: 992px){
+    .contact-form{
+        padding: 30px;
+    }
+}
+.contact-form #contact{
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.contact-form input 
+,.contact-form textarea{
+color: #7a7a7a;
+font-size: 13px;
+border: 1px solid #ddd;
+width: 100%;
+height: 40px;
+outline: none;
+line-height: 40px;
+padding: 0 10px;
+appearance: none;
+margin-bottom: 30px;
+}
+.contact-form textarea{
+    height: 150px;
+    resize: none;
+}
+.contact-form .btn{
+    color: #fff;
+    background-color: var(--min-color);
+    padding: 10px 15px;
+    border-radius: 0;
+}
+footer{
+    padding: 30px 0;
+    text-align: center;
+    background-color: #FFF;
+}
+footer p{
+    font-size: 13px;
+    color: #232d39;
+}
+footer p span{
+    color: var(--min-color);
+}
+/* end contact us */

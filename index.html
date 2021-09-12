@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TRAINING STUDIO</title>
+    <link rel="icon" href="./images/tabs-first-icon.png">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/main.css">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;800&display=swap"
         rel="stylesheet">
+        
 </head>
 
 <body>
@@ -19,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">TRAINING <span>STUDIO</span></a>
+                <a class="navbar-brand wow animate__fadeInTopLeft" href="#">TRAINING <span>STUDIO</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
@@ -27,22 +31,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#banner">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
+                            <a class="nav-link" href="#features">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CLASSES</a>
+                            <a class="nav-link" href="#our-classes">CLASSES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SCHEDULES</a>
+                            <a class="nav-link" href="#classes-schedule">SCHEDULES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="#contact-us">CONTACT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn" href="#">SIGN UP</a>
+                            <a class="btn" href="#contact-us">SIGN UP</a>
                         </li>
                     </ul>
                 </div>
@@ -51,27 +55,27 @@
     </header>
     <!-- main banner -->
 
-    <div class="banner">
+    <div id="banner" class="banner">
         <video autoplay muted loop>
             <source src="./images/gym-video.mp4" type="video/mp4">
         </video>
         <div class="overlay">
             <div class="caption text-center">
-                <h6>WORK HARDER, GET STRONGER</h6>
-                <h1>EASY WITH OUR <span>GYM</span></h1>
-                <a href="#" class="btn">BECOME A MEMBER</a>
+                <h6 class="wow bounceInUp">WORK HARDER, GET STRONGER</h6>
+                <h1 class="wow animate__lightSpeedInRight">EASY WITH OUR <span>GYM</span></h1>
+                <a href="#" class="btn wow flipInY">BECOME A MEMBER</a>
             </div>
         </div>
     </div>
     <!-- features -->
-    <section class="features">
+    <section id="features" class="features">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>CHOOSE <span>PROGRAM</span></h2>
-                        <img src="./images/line-dec.png" alt="">
-                        <p>Training Studio is free CSS template for gyms and fitness centers. You are allowed to use
+                        <h2 class="wow animate__backInLeft">CHOOSE <span>PROGRAM</span></h2>
+                        <img class="wow wobble" src="./images/line-dec.png" alt="">
+                        <p class="wow animate__backInUp">Training Studio is free CSS template for gyms and fitness centers. You are allowed to use
                             this layout for your business website.</p>
                     </div>
                 </div>
@@ -154,23 +158,23 @@
         </div>
     </section>
     <!-- call -->
-    <section class="call-to-action">
+    <section id="call-to-action" class="call-to-action">
         <div class="container">
             <div class="content">
-                <h2>DON’T <span>THINK</span>, BEGIN <span>TODAY</span>!</h2>
+                <h2 class="wow animate__backInLeft">DON’T <span>THINK</span>, BEGIN <span>TODAY</span>!</h2>
                 <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio
                     augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
-                <a href="#" class="btn">BECOME A MEMBER</a>
+                <a href="#our-classes" class="btn">BECOME A MEMBER</a>
             </div>
         </div>
     </section>
-    <section class="our-classes">
+    <section id="our-classes" class="our-classes">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>OUR <span>CLASSES</span></h2>
-                        <img src="./images/line-dec.png" alt="">
+                        <h2 class="wow animate__backInLeft">OUR <span>CLASSES</span></h2>
+                        <img class="wow wobble" src="./images/line-dec.png" alt="">
                         <p>Training Studio is free CSS template for gyms and fitness centers. You are allowed to use
                             this layout for your business website.</p>
                     </div>
@@ -178,7 +182,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="nav flex-column nav-pills wow animate__slideInLeft" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
                             role="tab" aria-controls="v-pills-home" aria-selected="true"><img
                                 src="./images/tabs-first-icon.png" alt="">First Training Class</a>
@@ -197,7 +201,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <div class="tab-content ml-lg-4" id="v-pills-tabContent">
+                    <div class="tab-content ml-lg-4 wow animate__slideInRight" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                             aria-labelledby="v-pills-home-tab">
                             <img src="./images/training-image-01.jpg" alt="">
@@ -237,7 +241,7 @@
                                 venenatis ipsum commodo et.
 
                             </p>
-                            <a href="#" class="btn">VIEW SCHEDULE</a>
+                            <a href="#classes-schedule" class="btn">VIEW SCHEDULE</a>
                         </div>
                     </div>
                 </div>
@@ -245,13 +249,13 @@
         </div>
     </section>
     <!-- classes schedule -->
-    <section class="classes-schedule">
+    <section id="classes-schedule" class="classes-schedule">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>CLASSES <span>SCHEDULE</span></h2>
-                        <img src="./images/line-dec.png" alt="">
+                        <h2 class="wow animate__backInLeft">CLASSES <span>SCHEDULE</span></h2>
+                        <img class="wow wobble" src="./images/line-dec.png" alt="">
                         <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor,
                             ultricies fermentum massa consequat eu.</p>
                     </div>
@@ -260,7 +264,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="filters">
-                        <ul class="schedule-filter">
+                        <ul class="schedule-filter wow animate__wobble">
                             <li data-filter=".Monday" class="active">Monday</li>
                             <li data-filter=".Tuesday"> Tuesday</li>
                             <li data-filter=".Wednesday">Wednesday</li>
@@ -269,11 +273,11 @@
                         </ul>
                     </div>
                     <div class="col-lg-10 offset-lg-1">
-                        <div class="schedule-table">
+                        <div class="schedule-table wow animate__rubberBand">
                             <table>
                                 <tr>
                                     <td>Fitness Class</td>
-                                    <td class="Monday ts-item">10:00AM - 11:30AM</td>
+                                    <td class="Monday ts-item" >10:00AM - 11:30AM</td>
                                     <td class="Tuesday ts-item">2:00PM - 3:30PM</td>
                                     <td>William G. Stewart</td>
                                 </tr>
@@ -285,7 +289,7 @@
                                 </tr>
                                 <tr>
                                     <td>Body Building</td>
-                                    <td class="Tuesday ts-item">10:00AM - 11:30AM</td>
+                                    <td class="Tuesday ts-item" >10:00AM - 11:30AM</td>
                                     <td class="Monday ts-item">2:00PM - 3:30PM</td>
                                     <td>Boyd C. Harris</td>
                                 </tr>
@@ -297,8 +301,8 @@
                                 </tr>
                                 <tr>
                                     <td>Advanced Training</td>
-                                    <td class="Thursday ts-item">10:00AM - 11:30AM</td>
-                                    <td class="Wednesday ts-item">2:00PM - 3:30PM</td>
+                                    <td class="Thursday ts-item" data-tsmeta="Thursday">10:00AM - 11:30AM</td>
+                                    <td class="Wednesday ts-item" data-tsmeta="Wednesday">2:00PM - 3:30PM</td>
                                     <td>Bret D. Bowers</td>
                                 </tr>
                             </table>
@@ -309,25 +313,130 @@
         </div>
     </section>
     <!-- expert tarainers -->
-    <section class="expert-tarainers">
+    <section id="expert-tarainers" class="expert-tarainers">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>EXPERT <span>TRAINERS</span></h2>
-                        <img src="./images/line-dec.png" alt="">
+                        <h2 class="wow animate__backInLeft">EXPERT <span>TRAINERS</span></h2>
+                        <img class="wow wobble" src="./images/line-dec.png" alt="">
                         <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor,
                             ultricies fermentum massa consequat eu.</p>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="trainer-item wow animate__backInLeft">
+                        <img src="./images/first-trainer.jpg" alt="">
+                        
+                        <div class="down-content">
+                            <span>Strength Trainer</span>
+                            <h4>Bret D. Bowers</h4>
+                            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trainer-item wow animate__backInUp">
+                        <img src="./images/second-trainer.jpg" alt="">
+                        <div class="down-content">
+                            <span>Strength Trainer</span>
+                            <h4>Bret D. Bowers</h4>
+                            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trainer-item wow animate__backInRight">
+                        <img src="./images/third-trainer.jpg" alt="">
+                        <div class="down-content">
+                            <span>Strength Trainer</span>
+                            <h4>Bret D. Bowers</h4>
+                            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- contact us -->
+    <section id="contact-us"  class="contact-us">
+        <div class="container-fliud">
+            <div class="row m-0">
+                <div class="col-md-6 p-0">
+                    <iframe class="wow pulse" src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3447.49178575278!2d31.48631978454585!3d30.22304936706728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d30.2229487!2d31.4841323!4m3!3m2!1d30.2229395!2d31.4840572!5e0!3m2!1sar!2seg!4v1631175931077!5m2!1sar!2seg" width="100%" height="674" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6 p-0">
+                    <div class="contact-form wow pulse">
+                        <form id="contact" action="" method="post">
+                          <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="name" type="text" id="name" placeholder="Your Name*">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="email" type="text" id="email" placeholder="Your Email*">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                              <fieldset>
+                                <input name="subject" type="text" id="subject" placeholder="Subject">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <textarea name="message" rows="6" id="message" placeholder="Message"></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button btn">Send Message</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright 2021 Training Studio-Designed by <span>Saico</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- end -->
     
     <script src="./js/jquery-3.5.1.slim.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/wow.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
