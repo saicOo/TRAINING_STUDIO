@@ -1,9 +1,6 @@
-# TRAINING_STUDIO
+![Screenshot 2022-02-10 172503](https://user-images.githubusercontent.com/83503164/153450659-5e78fda0-a033-4fb0-adcd-4ec9754bc4ab.png)
 
-![Design preview](./design/desktop-preview.jpg)
-
-## [Uploading Screenshot 2022-02-10 172503.png…)
-
+# [TRAINING_STUDIO](https://saicoo.github.io/angular-gabooo/)
 - Onepage Website
 - HTML
 - CSS
