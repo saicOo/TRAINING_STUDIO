@@ -4,3 +4,5 @@
 - Onepage Website
 - HTML
 - CSS
+- Bootstrap
+- jQuery/javaScript
